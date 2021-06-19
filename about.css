@@ -1,0 +1,30 @@
+:root {
+	--nav-background: rgba(20, 20, 19, 0.9);
+	--box-background: rgba(20, 20, 19, 0.6);
+	--font-color: rgb(244, 243, 234);
+}
+
+main {
+	width: 100vw;
+	height: 90vh;
+	padding: 100px;
+	margin: 0;
+	display: flex !important;
+	justify-content: space-between;
+}
+
+main section {
+	height: 100%;
+	font-size: 30px;
+	color: var(--font-color);
+	background-color: var(--box-background);
+	padding: 20px;
+}
+
+.left {
+	width: 30%;
+}
+
+.right {
+	width: 60%;
+}
