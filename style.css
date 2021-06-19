@@ -1,0 +1,54 @@
+/* roboto-regular - latin */
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: local(''), url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/roboto-v27-latin-regular.woff')
+			format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+	--nav-background: rgba(20, 20, 19, 0.9);
+	--box-background: rgba(20, 20, 19, 0.6);
+	--font-color: rgb(244, 243, 234);
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	background-image: url('./splash.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Roboto', sans-serif;
+}
+
+nav {
+	background-color: var(--nav-background);
+	width: 100%;
+	min-height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+nav section {
+	display: flex;
+	margin-right: 40px;
+}
+
+nav span {
+	color: var(--font-color);
+	font-size: 36px;
+	margin-left: 40px;
+}
+
+nav a:nth-child(2) {
+	margin: 0 40px;
+}
+
+a {
+	font-size: 24px;
+	text-decoration: none;
+	color: var(--font-color);
+}
